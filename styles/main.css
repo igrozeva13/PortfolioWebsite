@@ -1,0 +1,116 @@
+body {
+    background-color: #d4c4a4;
+    font-family: 'Proxima-Nova';
+}
+
+
+#mountain {
+  max-width: 100%;
+  position: relative;
+}
+
+#logo {
+  max-width: 10%;
+  position: absolute;
+  top: 2%;
+  left: 45%;
+}
+
+#main-nav {
+  position: absolute;
+  top: 6%;
+  float: right;
+  right: 8%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  padding: 15px;
+  font-weight: bold;
+  color: #6f362d;
+  letter-spacing: 4px;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #919642;
+}
+
+h1 {
+  color: #5a7576;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+
+.triple-d {
+  text-align: center;
+  margin-top: -70px;
+  margin-bottom: 50px;
+}
+
+.icons {
+  max-width: 40%;
+}
+
+.about {
+  background-color: white;
+}
+
+#me {
+  max-width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.about-text {
+  float: right;
+  max-width: 50%;
+  padding: 25px 5% 25px 5%;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  color: #888888;
+  position: relative;
+}
+
+.resume {
+  margin-top: 90px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+#resume {
+  max-width: 12%;
+}
+
+.work {
+  text-align: center;
+}
+
+.print{
+  background-color: #919642;
+}
+
+.web{
+  background-color: #ce542f;
+}
+
+.freelance{
+  background-color: #5a7576;
+}
+
+.work-block {
+  height: 300px;
+  color: white;
+  letter-spacing: 15px;
+  font-size: 40px;
+}
