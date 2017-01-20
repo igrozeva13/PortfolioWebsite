@@ -1,26 +1,43 @@
 /* ---------------------------------------- Main -----------------------------------*/
 
 body {
-    background-color: #d4c4a4;
+    background-color: #ececec;
     font-family: 'Proxima-Nova';
 }
 
 h1 {
-  color: #5a7576;
-  letter-spacing: 4px;
-  font-size: 24px;
+  color: #6f362d;
+  letter-spacing: 6px;
+  font-size: 30px;
   text-align: center;
+  font-weight: lighter;
+  padding: 20px;
 }
+
+.border {
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: thin;
+  color: #5a7576;
+  max-width: 25%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 30px;
+}
+
 
 h2 {
   font-size: 18px;
   font-weight: lighter;
+  padding: 0px 30px 0px 30px;
+  text-align: center;
 }
 
-h3 {
-  font: 30px;
-  letter-spacing: 4px;
-  color: #5a7576;
+p {
+    font-family: 'Proxima-Nova';
+    font-weight: lighter;
 }
 
 
@@ -32,10 +49,25 @@ h3 {
 }
 
 #logo {
-  max-width: 10%;
+  max-width: 50%;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+#floating-box {
   position: absolute;
-  top: 2%;
-  left: 45%;
+  top: 0;
+  width: 30%;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 15%;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 /* ---------------------------------------- Nav -----------------------------------*/
@@ -43,12 +75,15 @@ h3 {
 #main-nav {
   position: absolute;
   top: 6%;
-  float: right;
-  right: 8%;
+  text-align: center;
+  width: 100%;
 }
 
 ul {
   list-style: none;
+  text-align: center;
+  position: relative;
+  display: inline-block;
 }
 
 li {
@@ -56,15 +91,18 @@ li {
 }
 
 li a {
-  padding: 20px;
-  font-weight: bold;
-  color: #6f362d;
+  padding: 8px 12px 8px 12px;
+  margin: 10px;
+  font-weight: lighter;
+  color: #5a7576;
   letter-spacing: 4px;
 }
 
 li a:hover {
   text-decoration: none;
-  color: #919642;
+  background-color: #5a7576;
+  color: white;
+  font-weight: lighter;
 }
 
 /* ---------------------------------------- Dropdown Nav -----------------------------------*/
@@ -72,22 +110,25 @@ li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #919642;
+    background-color: white;
     min-width: 80px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin-top: 10px;
-    margin-left: -25px;
+    box-shadow: 0px 8px 16px 0px;
+    margin-top: 2px;
+    margin-left: -20px;
 }
 
 .dropdown-content a {
-    color: #6f362d;
-    padding: 10px 16px;
+    color: #5a7576;
     text-decoration: none;
     display: block;
     text-align: center;
+    margin: 0px;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #5a7576;
+  color: white;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -96,13 +137,16 @@ li a:hover {
 /* ---------------------------------------- Triple-D -----------------------------------*/
 
 .triple-d {
+  margin-top: -50px;
   text-align: center;
-  margin-top: -70px;
-  margin-bottom: 50px;
+  height: 250px;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 100px;
 }
 
 .icons {
-  max-width: 43%;
+  max-width: 6%;
 }
 
 /* ---------------------------------------- About -----------------------------------*/
@@ -118,25 +162,29 @@ li a:hover {
 
 .about-text {
   max-width: 50%;
-  padding: 25px 5% 25px 5%;
-  font-size: 1.1vw;
+  padding: 0px 5% 0px 5%;
+  font-size: 1vw;
   line-height: 2vw;
   text-align: left;
   color: #5a7576;;
   position: absolute;
   right: 0;
-  margin-top: -35%;
+  margin-top: -37%;
 }
 
 /* ---------------------------------------- Resume -----------------------------------*/
 
 .resume {
-  margin-top: -90px;
+  margin-top: -50px;
   text-align: center;
   height: 250px;
   position: relative;
   z-index: 100;
-  margin-bottom: 6%;
+}
+
+.words {
+  margin-top: 50px;
+  margin-bottom: 75px;
 }
 
 .resume a {
@@ -148,9 +196,6 @@ li a:hover {
   color: white;
 }
 
-#resume {
-  max-width: 12%;
-}
 
 /* ---------------------------------------- Work -----------------------------------*/
 
@@ -159,11 +204,11 @@ li a:hover {
 }
 
 .print{
-  background-color: #919642;
+  background-color: #5a7576;
 }
 
 .web{
-  background-color: #ce542f;
+  background-color: #8ba79e;
 }
 
 .freelance{
@@ -171,7 +216,7 @@ li a:hover {
 }
 
 .work-block {
-  height: 350px;
+  height: 300px;
   color: white;
   letter-spacing: 15px;
   font-size: 40px;
@@ -185,12 +230,13 @@ li a:hover {
 .type {
   text-align: center;
   vertical-align: middle;
-  line-height: 350px;
-  color: #d4c4a4;
+  line-height: 300px;
+  color: #ececec;
 }
 
 .type:hover {
   color: #6f362d;
+  font-weight: normal;
 }
 
 /* ----------------------------------------Contact -----------------------------------*/
@@ -204,7 +250,7 @@ li a:hover {
 /* ----------------------------------------Footer -----------------------------------*/
 
 .foot_bar{
-  background-color: #c2d0bb;
+  background-color: #8ba79e;
   height: 10px;
 }
 
@@ -218,14 +264,14 @@ li a:hover {
 }
 
 .social {
-  max-height: 30px;
+  max-height: 35px;
   margin: 18px;
 }
 
 p.copyright {
   padding-bottom: 10px;
   margin-bottom: 0;
-  color: #c2d0bb;
+  color: #ffffff;
   background-color: #5a7576;
   text-align: center;
 }
