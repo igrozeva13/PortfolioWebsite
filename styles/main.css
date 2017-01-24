@@ -14,6 +14,11 @@ h1 {
   padding: 20px;
 }
 
+.interior {
+  text-align: left;
+  padding-left: 0px;
+}
+
 .border {
   border-style: solid;
   border-top: none;
@@ -42,10 +47,17 @@ p {
 
 
 /* ----------------------------------------Header -----------------------------------*/
-
-#mountain {
+ #mountain {
   max-width: 100%;
   position: relative;
+  object-fit: cover;
+}
+
+#mountain-interior {
+  width: 100%;
+  position: relative;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 #logo {
@@ -61,11 +73,20 @@ p {
 
 #floating-box {
   position: absolute;
-  top: 0;
+  top: 15%;
   width: 30%;
   height: 500px;
   background-color: rgba(255, 255, 255, 0.7);
-  margin-top: 15%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+#floating-box-interior{
+  position: absolute;
+  top: 15%;
+  width: 30%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-left: 35%;
   margin-right: 35%;
 }
@@ -74,7 +95,7 @@ p {
 
 #main-nav {
   position: absolute;
-  top: 6%;
+  top: 4%;
   text-align: center;
   width: 100%;
 }
@@ -115,6 +136,7 @@ li a:hover {
     box-shadow: 0px 8px 16px 0px;
     margin-top: 2px;
     margin-left: -20px;
+    z-index: 1000;
 }
 
 .dropdown-content a {
@@ -278,4 +300,16 @@ p.copyright {
 
 a.foot {
   padding: 0px 12px 0px 10px;
+}
+
+/* ----------------------------------------Print Page -----------------------------------*/
+
+.content {
+  margin: 50px;
+  background-color: white;
+}
+
+.content img {
+  width: 100%;
+  padding: 40px;
 }
