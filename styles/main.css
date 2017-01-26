@@ -50,7 +50,6 @@ p {
  #mountain {
   max-width: 100%;
   position: relative;
-  object-fit: cover;
 }
 
 #mountain-interior {
