@@ -312,5 +312,9 @@ a.foot {
 
 .content img {
   width: 100%;
-  padding: 40px;
+  padding: 40px 10px 40px 20px;
+}
+
+.col-sm-4 p {
+  margin-right: 20px;
 }
