@@ -8,15 +8,9 @@ body {
 h1 {
   color: #6f362d;
   letter-spacing: 6px;
-  font-size: 30px;
   text-align: center;
   font-weight: lighter;
   padding: 20px;
-}
-
-.interior {
-  text-align: left;
-  padding-left: 0px;
 }
 
 .border {
@@ -52,27 +46,23 @@ p {
   position: relative;
 }
 
-#mountain-interior {
-  width: 100%;
-  position: relative;
-  max-height: 500px;
-  object-fit: cover;
-}
+/* ----------------------------------------begin Large Screen -----------------------------------*/
+@media screen and (min-width: 1068px) {
 
 #logo {
-  max-width: 50%;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 25px;
-  margin-bottom: 0px;
-}
+    max-width: 50%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
 
 #floating-box {
   position: absolute;
-  top: 20%;
+  top: 22%;
   width: 30%;
   max-height: 550px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -81,19 +71,167 @@ p {
   display: none;
 }
 
+.triple-d {
+  margin-top: -50px;
+}
+
+.resume {
+  margin-top: -50px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.about-text {
+  padding: 0px 5% 0px 5%;
+  font-size: 1vw;
+  line-height: 2vw;
+  margin-top: -37%;
+}
+
+/* ---------------------Large Interior Page -------------------*/
+
+#mountain-interior {
+  width: 100%;
+  position: relative;
+  max-height: 500px;
+  object-fit: cover;
+}
+
 #floating-box-interior{
   position: absolute;
   top: 180px;
-  width: 30%;
+  width: 40%;
   height: 200px;
   background-color: rgba(255, 255, 255, 0.7);
-  margin-left: 35%;
-  margin-right: 35%;
-    display: none;
+  margin-left: 30%;
+  margin-right: 30%;
+  display: none;
 }
 
-/* ---------------------------------------- Nav -----------------------------------*/
+.content {
+  margin: 50px;
+  background-color: white;
+}
 
+.content img {
+  width: 100%;
+  padding: 40px 10px 40px 20px;
+}
+
+.col-sm-4 p {
+  margin-right: 20px;
+}
+
+.interior {
+  text-align: left;
+  padding-left: 0px;
+}
+}
+
+/* ----------------------------------------End Large-----------------------------------*/
+
+
+/* ----------------------------------------Begin Tablet -----------------------------------*/
+@media screen and (min-width: 768px) and (max-width:1067px){
+
+#logo {
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+
+#floating-box {
+  position: absolute;
+  top: 140px;
+  width: 40%;
+  max-height: 500px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 30%;
+  margin-right: 30%;
+  display: none;
+}
+
+.triple-d {
+  margin-top: -30px;
+}
+
+.resume {
+  margin-top: -30px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.about-text {
+  padding: 0px 5% 0px 5%;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  margin-top: -39%;
+}
+
+h2{
+  padding: 0px 50px 0px 50px;
+}
+
+/* -------------------Tablet-Interior ---------------------*/
+
+#mountain-interior {
+  width: 100%;
+  position: relative;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+#floating-box-interior{
+  position: absolute;
+  top: 180px;
+  width: 50%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.7);;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: none;
+}
+
+.content {
+  margin: 50px;
+  background-color: white;
+}
+
+.content img {
+  width: 100%;
+  padding: 40px 10px 40px 20px;
+}
+
+.col-sm-4 p {
+  padding: 20px;
+}
+
+.col-sm-8 {
+  width: 100%;
+}
+
+.col-sm-4 {
+  width: 100%;
+}
+
+.interior {
+  text-align: left;
+  padding-left: 20px;
+}
+}
+/* ---------------------------------------- End Tablet -----------------------------------*/
+
+/* ---------------------------------------- Large Nav -----------------------------------*/
+@media screen and (min-width: 768px) {
 #main-nav {
   position: absolute;
   top:75px;
@@ -106,6 +244,7 @@ ul {
   text-align: center;
   position: relative;
   display: inline-block;
+  padding-left: 0px;
 }
 
 li {
@@ -127,6 +266,26 @@ li a:hover {
   font-weight: lighter;
 }
 
+
+.dropdown-content {
+    margin-left: -20px;
+}
+/* ---------------------------------------- Large About -----------------------------------*/
+#me-mobile {
+  display: none;
+}
+
+.about-text {
+  max-width: 50%;
+  padding: 0px 3% 0px 3%;
+  text-align: left;
+  color: #5a7576;
+  position: absolute;
+  right: 0;
+}
+}
+/* ---------------------------------------- End Media Large -----------------------------------*/
+
 /* ---------------------------------------- Dropdown Nav -----------------------------------*/
 
 .dropdown-content {
@@ -136,7 +295,6 @@ li a:hover {
     min-width: 80px;
     box-shadow: 0px 8px 16px 0px;
     margin-top: 2px;
-    margin-left: -20px;
     z-index: 1000;
 }
 
@@ -158,9 +316,7 @@ li a:hover {
 }
 
 /* ---------------------------------------- Triple-D -----------------------------------*/
-
 .triple-d {
-  margin-top: -50px;
   text-align: center;
   height: 250px;
   position: relative;
@@ -183,22 +339,9 @@ li a:hover {
   position: relative;
 }
 
-.about-text {
-  max-width: 50%;
-  padding: 0px 5% 0px 5%;
-  font-size: 1vw;
-  line-height: 2vw;
-  text-align: left;
-  color: #5a7576;;
-  position: absolute;
-  right: 0;
-  margin-top: -37%;
-}
-
 /* ---------------------------------------- Resume -----------------------------------*/
 
 .resume {
-  margin-top: -50px;
   text-align: center;
   height: 250px;
   position: relative;
@@ -303,18 +446,168 @@ a.foot {
   padding: 0px 12px 0px 10px;
 }
 
-/* ----------------------------------------Print Page -----------------------------------*/
+
+
+/* ----------------------------------------Mobile -----------------------------------*/
+@media screen and (max-width: 767px) {
+
+/* -------------------Mobile-Main -----------------*/
+h1 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h2{
+    padding: 0px 50px 0px 50px;
+    line-height: 6vw;
+}
+
+.icons {
+    display: none;
+}
+
+/* -------------------Mobile-Head -----------------*/
+#mountain {
+   max-width: 100%;
+   height: 700px;
+   object-fit: cover;
+ }
+
+#logo {
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+
+#floating-box {
+  position: absolute;
+  top: 220px;
+  width: 75%;
+  max-height: 500px;
+  background-color: rgba(255, 255, 255, 0.7);;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+/* -------------------Mobile-Triple D -----------------*/
+.triple-d {
+  margin-top: 100px;
+}
+
+/* -------------------Mobile-Nav -----------------*/
+#main-nav {
+  position: absolute;
+  top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-left: 0px;
+}
+
+li {
+  display: block;
+  padding: 10px;
+}
+
+li a {
+  padding: 8px;
+  font-weight: lighter;
+  color: #5a7576;
+  letter-spacing: 4px;
+}
+
+li a:hover {
+  text-decoration: none;
+  background-color: #5a7576;
+  color: white;
+  font-weight: lighter;
+}
+
+/* -------------------Mobile-Dropdown Nav -----------------*/
+
+.dropdown-content {
+    margin-left: -13px;
+}
+
+/* -------------------Mobile-About -----------------*/
+#me {
+  display: none;
+}
+
+#me-mobile {
+  width: 100%;
+}
+
+.about-text {
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  color: #5a7576;
+  right: 0;
+  font-size: 4vw;
+  line-height: 8vw;
+}
+
+/* ----------------Mobile-Interior --------------------------------*/
+
+#mountain-interior {
+  width: 100%;
+  position: relative;
+  height: 700px;
+  object-fit: cover;
+}
+
+#floating-box-interior{
+  position: absolute;
+  top: 230px;
+  width: 70%;
+  height: 230px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 15%;
+  margin-right: 15%;
+  display: none;
+}
 
 .content {
-  margin: 50px;
+  margin: 30px;
   background-color: white;
 }
 
 .content img {
   width: 100%;
-  padding: 40px 10px 40px 20px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
 }
 
 .col-sm-4 p {
-  margin-right: 20px;
+  padding: 20px;
+  text-align: justify;
+  margin: 0px;
 }
+
+.interior {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.col-sm-4 h2 {
+  font-size: 14px;
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
+}
+}
+
+/* ----------------------------------------End Mobile -----------------------------------*/
