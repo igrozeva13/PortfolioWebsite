@@ -546,6 +546,7 @@ li a:hover {
 }
 
 #me-mobile {
+  display: block;
   width: 100%;
 }
 
