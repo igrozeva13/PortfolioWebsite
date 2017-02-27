@@ -582,20 +582,17 @@ li a:hover {
 }
 
 .content {
-  margin: 30px;
-  background-color: white;
+  margin: 20px 0px 20px 0px;
 }
 
 .content img {
   width: 100%;
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 10px;
   padding-bottom: 0px;
 }
 
 .col-sm-4 p {
-  padding: 20px;
+  padding-bottom: 20px;
   text-align: justify;
   margin: 0px;
 }
@@ -607,8 +604,12 @@ li a:hover {
 
 .col-sm-4 h2 {
   font-size: 14px;
-  padding: 10px 0px 10px 0px;
   margin: 0px;
+}
+
+.col-sm-4 h1 {
+  margin: 0px;
+  padding: 20px 0px 10px 0px;
 }
 }
 
