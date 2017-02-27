@@ -39,7 +39,6 @@ p {
     font-weight: lighter;
 }
 
-
 /* ----------------------------------------Header -----------------------------------*/
  #mountain {
   max-width: 100%;
@@ -500,6 +499,7 @@ h2{
 }
 
 /* -------------------Mobile-Nav -----------------*/
+
 #main-nav {
   position: absolute;
   top: 30px;
@@ -507,7 +507,8 @@ h2{
   width: 100%;
 }
 
-ul {
+ul{
+  display: none;
   list-style: none;
   text-align: center;
   position: relative;
