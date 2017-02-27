@@ -231,6 +231,14 @@ h2{
 
 /* ---------------------------------------- Large Nav -----------------------------------*/
 @media screen and (min-width: 768px) {
+#nav-trigger {
+  display: none;
+  text-align: center;}
+
+nav#nav-mobile {
+  position: relative;
+  display: none; }
+
 #main-nav {
   position: absolute;
   top:75px;
@@ -499,7 +507,6 @@ h2{
 }
 
 /* -------------------Mobile-Nav -----------------*/
-
 #main-nav {
   position: absolute;
   top: 30px;
