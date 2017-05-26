@@ -4,4 +4,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
         $("#floating-box-interior").fadeIn(1000);
+
+        $("#dropdown-work").click(function(){
+            $(".dropdown-sub").slideToggle(750);
+        });
 });

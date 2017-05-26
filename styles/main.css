@@ -231,6 +231,10 @@ h2{
 
 /* ---------------------------------------- Large Nav -----------------------------------*/
 @media screen and (min-width: 768px) {
+.dropdown-main {
+  display: none;
+}
+
 #nav-trigger {
   display: none;
   text-align: center;}
@@ -493,7 +497,7 @@ h2{
 
 #floating-box {
   position: absolute;
-  top: 220px;
+  top: 175px;
   width: 75%;
   max-height: 500px;
   background-color: rgba(255, 255, 255, 0.7);;
@@ -508,10 +512,7 @@ h2{
 
 /* -------------------Mobile-Nav -----------------*/
 #main-nav {
-  position: absolute;
-  top: 30px;
-  text-align: center;
-  width: 100%;
+  display: none;
 }
 
 ul{
@@ -526,6 +527,7 @@ ul{
 li {
   display: block;
   padding: 10px;
+  text-align: center;
 }
 
 li a {
@@ -542,10 +544,42 @@ li a:hover {
   font-weight: lighter;
 }
 
-/* -------------------Mobile-Dropdown Nav -----------------*/
+.dropdown-main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 
-.dropdown-content {
-    margin-left: -13px;
+.dropbtn-main {
+  width: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+}
+
+.dropdown-main:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content{
+  position: absolute;
+  top: 87px;
+  width: 150px;
+}
+
+#myDropdown li{
+  padding: 0px;
+  margin: 0px;
+  width: 150px;
+}
+
+#myDropdown ul {
+  margin-bottom: 0px;
+}
+
+.dropdown-sub {
+  display: none;
+  background-color: #ebebeb;
 }
 
 /* -------------------Mobile-About -----------------*/
