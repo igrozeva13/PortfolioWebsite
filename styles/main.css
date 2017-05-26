@@ -555,6 +555,7 @@ li a:hover {
   cursor: pointer;
   position: absolute;
   top: 50px;
+  margin: 0 auto;
 }
 
 .dropdown-main:hover .dropdown-content {
@@ -565,6 +566,7 @@ li a:hover {
   position: absolute;
   top: 87px;
   width: 150px;
+  margin: 0 auto;
 }
 
 #myDropdown li{
