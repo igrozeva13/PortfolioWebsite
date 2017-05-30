@@ -396,7 +396,7 @@ li a:hover {
   height: 300px;
   color: white;
   letter-spacing: 15px;
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .work-block:hover {
@@ -516,10 +516,8 @@ h2{
 }
 
 ul{
-  display: none;
   list-style: none;
   text-align: center;
-  position: relative;
   display: inline-block;
   padding-left: 0px;
 }
@@ -531,6 +529,7 @@ li {
 }
 
 li a {
+  display: block;
   padding: 8px;
   font-weight: lighter;
   color: #5a7576;
@@ -538,16 +537,18 @@ li a {
 }
 
 li a:hover {
+  display: block;
   text-decoration: none;
   background-color: #5a7576;
   color: white;
   font-weight: lighter;
 }
 
+
 .dropdown-main {
-  align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .dropbtn-main {
@@ -555,7 +556,6 @@ li a:hover {
   cursor: pointer;
   position: absolute;
   top: 50px;
-  margin: 0 auto;
 }
 
 .dropdown-main:hover .dropdown-content {
@@ -566,8 +566,9 @@ li a:hover {
   position: absolute;
   top: 87px;
   width: 150px;
-  margin: 0 auto;
+  margin: auto;
 }
+
 
 #myDropdown li{
   padding: 0px;
