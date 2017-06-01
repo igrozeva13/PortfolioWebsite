@@ -3,6 +3,7 @@
 body {
     background-color: #ececec;
     font-family: 'Proxima-Nova';
+    font-weight: 500;
 }
 
 h1 {
@@ -370,7 +371,7 @@ li a:hover {
 
 .resume a:hover {
   text-decoration: none;
-  color: white;
+  color: #5a7576;
 }
 
 
@@ -544,18 +545,13 @@ li a:hover {
   font-weight: lighter;
 }
 
-
-.dropdown-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .dropbtn-main {
   width: 40px;
   cursor: pointer;
   position: absolute;
   top: 50px;
+  left: 50%;
+  margin-left: -20px;
 }
 
 .dropdown-main:hover .dropdown-content {
@@ -566,9 +562,9 @@ li a:hover {
   position: absolute;
   top: 87px;
   width: 150px;
-  margin: auto;
+  margin-left: -75px;
+  left: 50%;
 }
-
 
 #myDropdown li{
   padding: 0px;
@@ -631,14 +627,13 @@ li a:hover {
 
 .content img {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 0px;
+  padding: 10px 10px 0px 10px;
 }
 
 .col-sm-4 p {
   padding-bottom: 20px;
   text-align: justify;
-  margin: 0px;
+  margin: 10px;
 }
 
 .interior {
