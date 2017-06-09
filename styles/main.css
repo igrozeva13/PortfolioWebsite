@@ -67,7 +67,7 @@ h1 {
 h2{
     font-size: 14px;
     padding: 0px 50px 0px 50px;
-    line-height: 6vw;
+    line-height: 5vw;
 }
 
 .icons {
@@ -571,7 +571,7 @@ li a:hover {
   text-align: center;
   color: #5a7576;
   right: 0;
-  font-size: 4vw;
+  font-size: 16px;
   line-height: 8vw;
 }}
 
@@ -592,6 +592,7 @@ li a:hover {
 @media screen and (max-width: 767px) {
 .triple-d {
   margin-top: 100px;
+  margin-bottom: 50px;
 }}
 
 /* ------------------------------------------------------Resume --------------------------------------------*/
