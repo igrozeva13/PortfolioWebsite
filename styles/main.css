@@ -1,5 +1,4 @@
 /* ---------------------------------------- Main -----------------------------------*/
-
 body {
     background-color: #ececec;
     font-family: 'Proxima-Nova';
@@ -41,13 +40,54 @@ p {
     font-weight: lighter;
 }
 
-/* ----------------------------------------Header -----------------------------------*/
- #mountain {
-  max-width: 100%;
-  position: relative;
+a:link {
+  text-decoration: none;
 }
 
-/* ----------------------------------------begin Large Screen -----------------------------------*/
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* -------------------Begin Mobile -----------------*/
+@media screen and (max-width: 767px) {
+
+h1 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h2{
+    font-size: 14px;
+    padding: 0px 50px 0px 50px;
+    line-height: 6vw;
+}
+
+.icons {
+    display: none;
+}}
+
+/* ------------------------------------------------------Header --------------------------------------------*/
+ #mountain {
+   width: 100%;
+   max-height: 1200px;
+   position: relative;
+   object-fit: cover;
+}
+
+.head {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* --------------------- Begin Large -------------------*/
 @media screen and (min-width: 1068px) {
 
 #logo {
@@ -62,13 +102,9 @@ p {
   }
 
 #floating-box {
-  position: absolute;
-  top: 23%;
-  width: 30%;
-  max-height: 550px;
   background-color: rgba(255, 255, 255, 0.7);
-  margin-left: 35%;
-  margin-right: 35%;
+  position: absolute;
+  width: 30%;
   display: none;
 }
 
@@ -89,10 +125,109 @@ h1 {
   font-size: 1vw;
   line-height: 2vw;
   margin-top: -37%;
+} }
+
+/* --------------------- Begin Tablet -------------------*/
+@media screen and (min-width: 768px) and (max-width:1067px){
+
+#logo {
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+
+  #floating-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    width: 40%;
+    max-height: 400px;
+    display: none;
+  }
+/*
+#floating-box {
+  position: absolute;
+  top: 140px;
+  width: 40%;
+  max-height: 500px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 30%;
+  margin-right: 30%;
+  display: none;
+} */
+
+.triple-d {
+  margin-top: -30px;
 }
 
-/* ---------------------Large Interior Page -------------------*/
+.resume {
+  margin-top: -30px;
+}
 
+h1 {
+  font-size: 20px;
+}
+
+.about-text {
+  padding: 0px 5% 0px 5%;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  margin-top: -39%;
+}
+
+h2{
+  padding: 0px 50px 0px 50px;
+}
+}
+
+/* --------------------- Begin Mobile -------------------*/
+@media screen and (max-width: 767px) {
+#mountain {
+   max-width: 100%;
+   height: 650px;
+   object-fit: cover;
+ }
+
+#logo {
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+
+#floating-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    width: 75%;
+    max-height: 500px;
+    display: none;
+}
+/*
+#floating-box {
+  position: absolute;
+  top: 175px;
+  width: 75%;
+  max-height: 500px;
+  background-color: rgba(255, 255, 255, 0.7);;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+} */
+}
+
+
+
+/* ------------------------------------------------------Interior Page --------------------------------------------*/
+
+/* --------------------- Begin Large -------------------*/
+@media screen and (min-width: 1068px) {
 #mountain-interior {
   width: 100%;
   position: relative;
@@ -131,59 +266,8 @@ h1 {
 }
 }
 
-/* ----------------------------------------End Large-----------------------------------*/
-
-
-/* ----------------------------------------Begin Tablet -----------------------------------*/
+/* -------------------Begin Tablet---------------------*/
 @media screen and (min-width: 768px) and (max-width:1067px){
-
-#logo {
-    max-width: 40%;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 25px;
-    margin-bottom: 0px;
-  }
-
-#floating-box {
-  position: absolute;
-  top: 140px;
-  width: 40%;
-  max-height: 500px;
-  background-color: rgba(255, 255, 255, 0.7);
-  margin-left: 30%;
-  margin-right: 30%;
-  display: none;
-}
-
-.triple-d {
-  margin-top: -30px;
-}
-
-.resume {
-  margin-top: -30px;
-}
-
-h1 {
-  font-size: 20px;
-}
-
-.about-text {
-  padding: 0px 5% 0px 5%;
-  font-size: 1.2vw;
-  line-height: 1.8vw;
-  margin-top: -39%;
-}
-
-h2{
-  padding: 0px 50px 0px 50px;
-}
-
-/* -------------------Tablet-Interior ---------------------*/
-
 #mountain-interior {
   width: 100%;
   position: relative;
@@ -229,9 +313,60 @@ h2{
   padding-left: 20px;
 }
 }
-/* ---------------------------------------- End Tablet -----------------------------------*/
 
-/* ---------------------------------------- Large Nav -----------------------------------*/
+/* -------------------Begin Mobile---------------------*/
+@media screen and (max-width: 767px) {
+#mountain-interior {
+  width: 100%;
+  position: relative;
+  height: 700px;
+  object-fit: cover;
+}
+
+#floating-box-interior{
+  position: absolute;
+  top: 230px;
+  width: 70%;
+  height: 230px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 15%;
+  margin-right: 15%;
+  display: none;
+}
+
+.content {
+  margin: 20px 0px 20px 0px;
+}
+
+.content img {
+  width: 100%;
+  padding: 10px 10px 0px 10px;
+}
+
+.col-sm-4 p {
+  padding-bottom: 20px;
+  text-align: justify;
+  margin: 10px;
+}
+
+.interior {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.col-sm-4 h2 {
+  font-size: 14px;
+  margin: 0px;
+}
+
+.col-sm-4 h1 {
+  margin: 0px;
+  padding: 20px 0px 10px 0px;
+}
+}
+
+/* ------------------------------------------------------Navigation --------------------------------------------*/
+/* -------------------Begin Large---------------------*/
 @media screen and (min-width: 768px) {
 .dropdown-main {
   display: none;
@@ -247,7 +382,7 @@ nav#nav-mobile {
 
 #main-nav {
   position: absolute;
-  top:75px;
+  top: 110px;
   text-align: center;
   width: 100%;
 }
@@ -282,237 +417,18 @@ li a:hover {
 
 .dropdown-content {
     margin-left: -20px;
-}
-/* ---------------------------------------- Large About -----------------------------------*/
-#me-mobile {
-  display: none;
-}
+} }
 
-.about-text {
-  max-width: 50%;
-  padding: 0px 3% 0px 3%;
-  text-align: left;
-  color: #5a7576;
-  position: absolute;
-  right: 0;
-}
-}
-/* ---------------------------------------- End Media Large -----------------------------------*/
-
-/* ---------------------------------------- Dropdown Nav -----------------------------------*/
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 80px;
-    box-shadow: 0px 8px 16px 0px;
-    margin-top: 2px;
-    z-index: 1000;
-}
-
-.dropdown-content a {
-    color: #5a7576;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    margin: 0px;
-}
-
-.dropdown-content a:hover {
-  background-color: #5a7576;
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* ---------------------------------------- Triple-D -----------------------------------*/
-.triple-d {
-  text-align: center;
-  height: 250px;
-  position: relative;
-  z-index: 100;
-  margin-bottom: 100px;
-}
-
-.icons {
-  max-width: 6%;
-}
-
-/* ---------------------------------------- About -----------------------------------*/
-
-.about {
-  background-color: white;
-}
-
-#me {
-  width: 100%;
-  position: relative;
-}
-
-/* ---------------------------------------- Resume -----------------------------------*/
-
-.resume {
-  text-align: center;
-  height: 250px;
-  position: relative;
-  z-index: 100;
-}
-
-.words {
-  margin-top: 50px;
-  margin-bottom: 75px;
-}
-
-.resume a {
-  color: #6f362d;
-}
-
-.resume a:hover {
-  text-decoration: none;
-  color: #5a7576;
-}
-
-
-/* ---------------------------------------- Work -----------------------------------*/
-
-.work {
-  text-align: center;
-}
-
-.print{
-  background-color: #5a7576;
-}
-
-.web{
-  background-color: #8ba79e;
-}
-
-.freelance{
-  background-color: #5a7576;
-}
-
-.work-block {
-  height: 300px;
-  color: white;
-  letter-spacing: 15px;
-  font-size: 36px;
-}
-
-.work-block:hover {
-  transform: scale(1.03);
-  z-index: 100;
-}
-
-.type {
-  text-align: center;
-  vertical-align: middle;
-  line-height: 300px;
-  color: #ececec;
-}
-
-.type:hover {
-  color: #6f362d;
-  font-weight: normal;
-}
-
-/* ----------------------------------------Contact -----------------------------------*/
-
-.contact {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-/* ----------------------------------------Footer -----------------------------------*/
-
-.foot_bar{
-  background-color: #8ba79e;
-  height: 10px;
-}
-
-.foot {
-  background-color: #5a7576;
-  height: auto;
-  text-align: center;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.social {
-  max-height: 35px;
-  margin: 18px;
-}
-
-p.copyright {
-  padding-bottom: 10px;
-  margin-bottom: 0;
-  color: #ffffff;
-  background-color: #5a7576;
-  text-align: center;
-}
-
-a.foot {
-  padding: 0px 12px 0px 10px;
-}
-
-
-
-/* ----------------------------------------Mobile -----------------------------------*/
-@media screen and (max-width: 767px) {
-
-/* -------------------Mobile-Main -----------------*/
-h1 {
-    font-size: 20px;
-    line-height: 30px;
-}
-
-h2{
-    padding: 0px 50px 0px 50px;
-    line-height: 6vw;
-}
-
-.icons {
-    display: none;
-}
-
-/* -------------------Mobile-Head -----------------*/
-#mountain {
-   max-width: 100%;
-   height: 700px;
-   object-fit: cover;
- }
-
-#logo {
-    max-width: 40%;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 25px;
-    margin-bottom: 0px;
+/* -------------------Begin Tablet---------------------*/
+@media screen and (min-width: 768px) and (max-width:1150px) {
+  #main-nav {
+    top: 5%;
   }
-
-#floating-box {
-  position: absolute;
-  top: 175px;
-  width: 75%;
-  max-height: 500px;
-  background-color: rgba(255, 255, 255, 0.7);;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
 }
 
-/* -------------------Mobile-Triple D -----------------*/
-.triple-d {
-  margin-top: 100px;
-}
 
-/* -------------------Mobile-Nav -----------------*/
+/* -------------------Begin Mobile---------------------*/
+@media screen and (max-width: 767px) {
 #main-nav {
   display: none;
 }
@@ -580,9 +496,66 @@ li a:hover {
 .dropdown-sub {
   display: none;
   background-color: #ebebeb;
+}}
+
+/* ------------------------------------------------------Dropdown Nav --------------------------------------------*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px;
+    margin-top: 2px;
+    z-index: 1000;
 }
 
-/* -------------------Mobile-About -----------------*/
+.dropdown-content a {
+    color: #5a7576;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 0px;
+}
+
+.dropdown-content a:hover {
+  background-color: #5a7576;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ------------------------------------------------------About --------------------------------------------*/
+
+.about {
+  background-color: white;
+}
+
+#me {
+  width: 100%;
+  position: relative;
+}
+
+/* -------------------Begin Large---------------------*/
+@media screen and (min-width: 768px) {
+#me-mobile {
+  display: none;
+}
+
+.about-text {
+  max-width: 50%;
+  padding: 0px 3% 0px 3%;
+  text-align: left;
+  color: #5a7576;
+  position: absolute;
+  right: 0;
+}
+}
+
+/* -------------------Begin Mobile---------------------*/
+@media screen and (max-width: 767px) {
 #me {
   display: none;
 }
@@ -600,57 +573,130 @@ li a:hover {
   right: 0;
   font-size: 4vw;
   line-height: 8vw;
-}
+}}
 
-/* ----------------Mobile-Interior --------------------------------*/
-
-#mountain-interior {
-  width: 100%;
-  position: relative;
-  height: 700px;
-  object-fit: cover;
-}
-
-#floating-box-interior{
-  position: absolute;
-  top: 230px;
-  width: 70%;
-  height: 230px;
-  background-color: rgba(255, 255, 255, 0.7);
-  margin-left: 15%;
-  margin-right: 15%;
-  display: none;
-}
-
-.content {
-  margin: 20px 0px 20px 0px;
-}
-
-.content img {
-  width: 100%;
-  padding: 10px 10px 0px 10px;
-}
-
-.col-sm-4 p {
-  padding-bottom: 20px;
-  text-align: justify;
-  margin: 10px;
-}
-
-.interior {
+/* ------------------------------------------------------Triple -D --------------------------------------------*/
+.triple-d {
   text-align: center;
-  padding-left: 20px;
+  height: 250px;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 100px;
 }
 
-.col-sm-4 h2 {
-  font-size: 14px;
-  margin: 0px;
+.icons {
+  max-width: 6%;
 }
 
-.col-sm-4 h1 {
-  margin: 0px;
-  padding: 20px 0px 10px 0px;
-}
+/* -------------------Begin Mobile---------------------*/
+@media screen and (max-width: 767px) {
+.triple-d {
+  margin-top: 100px;
+}}
+
+/* ------------------------------------------------------Resume --------------------------------------------*/
+
+.resume {
+  text-align: center;
+  height: 250px;
+  position: relative;
+  z-index: 100;
 }
 
-/* ----------------------------------------End Mobile -----------------------------------*/
+.words {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+.resume a {
+  color: #6f362d;
+}
+
+.resume a:hover {
+  text-decoration: none;
+  color: #5a7576;
+}
+
+
+/* ------------------------------------------------------Work --------------------------------------------*/
+
+.work {
+  text-align: center;
+}
+
+.print{
+  background-color: #5a7576;
+}
+
+.web{
+  background-color: #8ba79e;
+}
+
+.freelance{
+  background-color: #5a7576;
+}
+
+.work-block {
+  height: 300px;
+  color: white;
+  letter-spacing: 15px;
+  font-size: 36px;
+}
+
+.work-block:hover {
+  transform: scale(1.03);
+  z-index: 100;
+}
+
+.type {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300px;
+  color: #ececec;
+}
+
+.type:hover {
+  color: #6f362d;
+  font-weight: normal;
+}
+
+/* ------------------------------------------------------Contact --------------------------------------------*/
+
+.contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+/* ------------------------------------------------------Footer --------------------------------------------*/
+
+.foot_bar{
+  background-color: #8ba79e;
+  height: 10px;
+}
+
+.foot {
+  background-color: #5a7576;
+  height: auto;
+  text-align: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  max-height: 35px;
+  margin: 18px;
+}
+
+p.copyright {
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  color: #ffffff;
+  background-color: #5a7576;
+  text-align: center;
+}
+
+a.foot {
+  padding: 0px 12px 0px 10px;
+}
