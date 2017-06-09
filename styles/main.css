@@ -83,15 +83,23 @@ h2{
 }
 
 .head {
-  -webkit-box-align-items: center;
+  /*-webkit-box-align-items: center;
+  -moz-box-align-items: center;
+  -ms-flexbox-align-items: center;
   -webkit-flex-align-items: center;
   align-items: center;
   display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flexbox-justify-content: center;
   -webkit-flex-justify-content: center;
-  justify-content: center;
+  justify-content: center; */
+  text-align: center;
+  position: relative;
 }
 /* --------------------- Begin Large -------------------*/
 @media screen and (min-width: 1068px) {
@@ -109,9 +117,12 @@ h2{
 
 #floating-box {
   background-color: rgba(255, 255, 255, 0.7);
-  position: absolute;
   width: 30%;
+  position: absolute;
   display: none;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .triple-d {
@@ -152,7 +163,10 @@ h1 {
     position: absolute;
     width: 40%;
     max-height: 400px;
-    display: none;
+    display: block;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
   }
 /*
 #floating-box {
@@ -213,8 +227,11 @@ h2{
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     width: 75%;
-    max-height: 500px;
-    display: none;
+    max-height: 450px;
+    display: block;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
 }
 /*
 #floating-box {
@@ -428,7 +445,7 @@ li a:hover {
 /* -------------------Begin Tablet---------------------*/
 @media screen and (min-width: 768px) and (max-width:1150px) {
   #main-nav {
-    top: 5%;
+    top: 8%;
   }
 }
 
