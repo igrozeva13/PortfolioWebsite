@@ -83,10 +83,13 @@ h2{
 }
 
 .head {
+  -webkit-box-align-items: center;
   -webkit-flex-align-items: center;
   align-items: center;
+  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
+  -webkit-box-justify-content: center;
   -webkit-flex-justify-content: center;
   justify-content: center;
 }
