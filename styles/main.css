@@ -83,8 +83,11 @@ h2{
 }
 
 .head {
+  -webkit-flex-align-items: center;
   align-items: center;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-justify-content: center;
   justify-content: center;
 }
 /* --------------------- Begin Large -------------------*/
